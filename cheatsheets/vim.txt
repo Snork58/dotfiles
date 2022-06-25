@@ -1,1 +1,9 @@
-test
+function hoge(s) {
+    return s.replace(/^[0-9]+/g,'');
+}
+
+<div class="ph borderd w30>
+    <div class="fill-danger">abc</div>
+Delete more then one word
+Practical Vim, by Drew Neil
+Read Drew Neil's  

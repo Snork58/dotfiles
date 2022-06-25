@@ -20,6 +20,7 @@ set wildmenu
 set iminsert=0
 set hlsearch
 set autoindent
+set nrformats=
 
 set noundofile
 set backup
