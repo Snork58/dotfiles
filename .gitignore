@@ -1,0 +1,109 @@
+# ========================
+# dotfiles 固有の除外ファイル
+# ========================
+
+# stow による一時ファイル・バックアップ
+.stow-*
+.stowrc
+
+# バックアップファイル（stow-local.sh等で作成される可能性）
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# 一時ファイル・ログ
+*.log
+*.tmp
+*.temp
+
+# ========================
+# SSH関連 (セキュリティ重要)
+# ========================
+# 秘密鍵は絶対に含めない
+ssh/.ssh/id_*
+ssh/.ssh/*.pem
+ssh/.ssh/*.key
+ssh/.ssh/known_hosts
+ssh/.ssh/authorized_keys
+
+# SSH config は含める（個人設定なので）
+!ssh/.ssh/config
+
+# ========================
+# 個人的な設定・メモ
+# ========================
+# 個人用のメモやTODO
+TODO.md
+NOTES.md
+.notes/
+personal/
+
+# 環境固有の設定
+local/
+.local/
+
+# テスト用ファイル
+test/
+temp/
+sandbox/
+
+# ========================
+# macOS システムファイル
+# ========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ========================
+# エディタ一時ファイル
+# ========================
+# Vim
+*.swp
+*.swo
+.*.tmp
+
+# VS Code (プロジェクト固有設定のみ除外)
+.vscode/settings.json
+.vscode/launch.json
+
+# ========================
+# Git関連
+# ========================
+# Git hooks のローカル設定
+.git/hooks/local-*
+
+# ========================
+# 実行時・ランタイム
+# ========================
+# スクリプト実行時の一時ファイル
+*.pid
+.bootstrap-lock
+
+# ========================
+# 圧縮・アーカイブ
+# ========================
+*.zip
+*.tar.gz
+*.rar
+
+# ========================
+# 将来の拡張用
+# ========================
+# 追加パッケージの設定ディレクトリ
+# 例：tmux/, nvim/, etc.の中の一部ファイル
+
+# tmux プラグイン（例）
+tmux/plugins/
+tmux/.tmux/plugins/
+
+# Vim プラグイン（例）
+vim/.vim/bundle/
+vim/.vim/plugged/
+
+# Zsh プラグイン管理ツールのキャッシュ
+zsh/.oh-my-zsh/
+zsh/.zplug/
+zsh/.zinit/
