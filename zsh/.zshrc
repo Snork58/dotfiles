@@ -17,9 +17,6 @@ fi
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 
-# Workspace
-alias ws='code ~/Workspaces/AllProjects.code-workspace'  # VS Code ワークスペースを開く
-
 # eza (改良版 ls)
 alias ls='eza --long --header --git --group-directories-first'  # 詳細表示、Git状態付き
 alias la='ls --all'         # 隠しファイルも表示
