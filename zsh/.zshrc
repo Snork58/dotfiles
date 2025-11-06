@@ -17,6 +17,9 @@ fi
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 
+# cd コマンド補完
+alias cdgoogle='cd ~/Library/CloudStorage/GoogleDrive-kachoufuugetsu2501@gmail.com/マイドライブ'
+
 # eza (改良版 ls)
 alias ls='eza --long --header --git --group-directories-first'  # 詳細表示、Git状態付き
 alias la='ls --all'         # 隠しファイルも表示
