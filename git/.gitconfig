@@ -3,3 +3,7 @@
 	email = kachoufuugetsu_jp@yahoo.co.jp\n
 [init]
 	defaultBranch = main
+[merge]
+	ff = true
+[pull]
+	rebase = false
